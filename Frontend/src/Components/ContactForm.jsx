@@ -2,16 +2,18 @@ import React from 'react';
 
 const ContactForm = () => (
   <>
+  <span>
     <input
       type="text"
       placeholder="Name"
-      className="rounded-md w-60 p-2 bg-slate-800 z-50 shadow-2xl  mt-8"
+      className="rounded-md w-60 p-2 bg-slate-800 z-50 shadow-2xl "
     />
     <input
       type="text"
       placeholder="Email"
       className="rounded-md w-60 p-2 bg-slate-800 z-50 shadow-2xl ml-1 mt-4"
     />
+  </span>
     <div className="mt-4">
       <input
         type="text"
@@ -31,3 +33,4 @@ const ContactForm = () => (
 );
 
 export default ContactForm;
+   

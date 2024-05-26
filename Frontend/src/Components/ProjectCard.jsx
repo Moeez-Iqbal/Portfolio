@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProjectCard = ({ image, alt, title }) => (
-  <div className="w-1/3 shadow-lg hover:shadow-orange-500 mx-3 bg-slate-800 z-50 relative group rounded-lg">
+  <div className="w-1/3 shadow-lg hover:shadow-orange-500 mx-3 bg-slate-800 z-50 relative group rounded-lg ">
     <div className="relative">
       <img
         src={image}
@@ -16,6 +16,7 @@ const ProjectCard = ({ image, alt, title }) => (
       </div>
     </div>
   </div>
+
 );
 
 export default ProjectCard;
