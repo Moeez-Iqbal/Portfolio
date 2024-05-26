@@ -5,6 +5,7 @@ import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Project from "../Pages/Project";
 import Contact from "../Pages/Contact";
+import Footer from "../Components/Footer";
 
 function AppRoutes() {
   return (
@@ -16,6 +17,7 @@ function AppRoutes() {
         <Route path="/project" element={<Project/>}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
+      <Footer/>
     </>
   );
 }

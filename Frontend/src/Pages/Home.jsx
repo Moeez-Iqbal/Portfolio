@@ -17,7 +17,6 @@ import {
   IoLogoTwitter,
   IoLogoFacebook,
   IoLogoWhatsapp,
-  IoLinkOutline,
 } from "react-icons/io5";
 import { IoLogoTwitch, IoMdMail } from "react-icons/io";
 import { FcAbout } from "react-icons/fc";
@@ -139,7 +138,7 @@ function Home() {
         </div>
       </div>
       <div className="ml-24">
-        <button className="text-md flex mx-3 items-center text-white bg-orange-500 p-2 rounded-lg font-semibold hover:bg-slate-700 transform transition-transform duration-300 hover:-translate-y-2">
+        <button className="text-md flex mx-3 mt-4  items-center text-white bg-orange-500 p-2 rounded-lg font-semibold hover:bg-slate-700 transform transition-transform duration-300 hover:-translate-y-2">
           See All <FaLongArrowAltRight className="ml-2" />
         </button>
       </div>
@@ -152,7 +151,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row mb-40">
         <div className="md:w-1/2 mb-8 md:mb-0 md:pr-4 ml-8 md:ml-36">
           <h1 className="text-3xl text-white font-semibold">Contact Me</h1>
           <ContactForm />
@@ -166,29 +165,31 @@ function Home() {
           <h1 className="text-3xl text-white font-semibold mb-4">
             Contact Info
           </h1>
-          <div className="flex items-center mt-4">
-            <IoPersonSharp className="text-3xl text-white hover:text-orange-500" />
-            <h1 className="text-1xl text-orange-500 ml-4 z-50 shadow-lg font-bold">
-              Moeez Iqbal
-            </h1>
-          </div>
-          <div className="flex items-center mt-4">
-            <IoCall className="text-3xl text-white hover:text-orange-500" />
-            <h1 className="text-1xl text-orange-500 z-50 ml-4 shadow-lg font-bold">
-              03044096036
-            </h1>
-          </div>
-          <div className="flex items-center mt-4">
-            <IoMdMail className="text-3xl text-white hover:text-orange-500" />
-            <h1 className="text-1xl text-orange-500 ml-4 z-50 shadow-lg font-bold">
-              moeeziqbalmughal@gmail.com
-            </h1>
-          </div>
-          <div className="flex items-center mt-4">
-            <IoLocation className="text-3xl text-white hover:text-orange-500" />
-            <h1 className="text-1xl text-orange-500 ml-4 z-50 shadow-lg font-bold">
-              Lahore, Pakistan
-            </h1>
+          <div className="flex flex-col mt-4">
+            <ContactInfo
+              icon={
+                <IoPersonSharp className="text-3xl text-white hover:text-orange-500" />
+              }
+              details="Moeez Iqbal"
+            />
+            <ContactInfo
+              icon={
+                <IoCall className="text-3xl text-white hover:text-orange-500" />
+              }
+              details="03044096036"
+            />
+            <ContactInfo
+              icon={
+                <IoMdMail className="text-3xl text-white hover:text-orange-500" />
+              }
+              details="moeeziqbalmughal@gmail.com"
+            />
+            <ContactInfo
+              icon={
+                <IoLocation className="text-3xl text-white hover:text-orange-500" />
+              }
+              details="Lahore, Pakistan"
+            />
           </div>
           <div className="mt-8">
             <div className="flex gap-4">
