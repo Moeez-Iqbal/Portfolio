@@ -28,6 +28,7 @@ import ServiceCard from "../Components/ServiceCard";
 import ProjectCard from "../Components/ProjectCard";
 import ContactForm from "../Components/ContactForm";
 import ContactInfo from "../Components/ContactInfo";
+import LottiePlayers2 from "../Components/LottiePlayers2";
 
 function Home() {
   const [textIndex, setTextIndex] = useState(0);
@@ -77,12 +78,8 @@ function Home() {
             </button>
           </div>
         </div>
-        <div className="w-1/2">
-          <img
-            src={backgroundImage}
-            alt="Background"
-            className=" ml-24 mt-12 max-w-lg  rounded-md transform hover:scale-105 transition-transform duration-300 cursor-pointer"
-          />
+        <div className="w-1/2 ml-48">
+          <LottiePlayers2 />
         </div>
       </div>
 

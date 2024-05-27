@@ -19,6 +19,7 @@ import {
 import { RiBootstrapFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiVisualstudiocode } from "react-icons/si";
 import LottiePlayer from "../Components/LottiePlayer";
+import LottiePlayer3 from "../Components/LottiePlayer3";
 
 function About() {
   const [textIndex, setTextIndex] = useState(0);
@@ -149,9 +150,26 @@ function About() {
       </div>
 
 
-      <div>
-        
+      <div className="flex flex-col items-center mt-10">
+        <div className="flex justify-center gap-2 mt-2">
+          <h1 className="text-3xl text-white font-bold">My</h1>
+          <h1 className="text-3xl text-orange-500 font-bold">Qualifications</h1>
+        </div>
       </div>
+
+
+      <div className="flex">
+        <div className="w-1/2 ml-48 mt-10">
+        <LottiePlayer3 />
+        </div>
+
+
+        <div className="">
+
+        </div>
+      </div>
+
+
     </>
   );
 }
