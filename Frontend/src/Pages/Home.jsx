@@ -155,13 +155,15 @@ function Home() {
         <div className="md:w-1/2 mb-8 md:mb-0 md:pr-4 ml-8 md:ml-36">
           <h1 className="text-3xl text-white font-semibold">Contact Me</h1>
           <ContactForm />
+          <div className="flex gap-2">
           <button className="bg-orange-500 p-2 w-30 text-white rounded-lg hover:bg-slate-800 transform transition-transform duration-300 hover:-translate-y-2 font-semibold flex items-center justify-center mt-4">
-            <span className="ml-2">Send</span>
-            <IoSend />
+            <span >Send</span>
+            <IoSend className="ml-2"/>
           </button>
+          </div>
         </div>
 
-        <div className="md:w-1/2 md:pl-4 ml-8 md:ml-36">
+        <div className="md:w-1/2 md:pl-4 ml-8 md:ml-36 ">
           <h1 className="text-3xl text-white font-semibold mb-4">
             Contact Info
           </h1>
