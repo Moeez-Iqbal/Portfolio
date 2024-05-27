@@ -51,7 +51,7 @@ function About() {
 
       <div className="flex flex-row ml-32 mt-20 mr-20">
         <div className="w-1/2 p-10">
-          <img src={Moeez} alt="Moeez Iqbal" className="rounded-2xl w-96" />
+          <img src={Moeez} alt="Moeez Iqbal" className="rounded-2xl w-96 hover:transform hover:scale-105 transition-transform duration-300" />
         </div>
 
         <div className="w-1/2 ">
@@ -145,10 +145,9 @@ function About() {
         </div>
 
         <div className="w-1/2 ml-44 mt-5">
-           <LottiePlayer />
+          <LottiePlayer />
         </div>
       </div>
-
 
       <div className="flex flex-col items-center mt-10">
         <div className="flex justify-center gap-2 mt-2">
@@ -157,19 +156,28 @@ function About() {
         </div>
       </div>
 
-
       <div className="flex">
         <div className="w-1/2 ml-48 mt-10">
-        <LottiePlayer3 />
+          <LottiePlayer3 />
         </div>
 
-
-        <div className="">
-
+        <div className="w-1/2 mt-16 mb-16 ">
+          <div className="bg-custom-4 bg-opacity-5 w-2/4 rounded-md p-2 z-50 shadow-md hover:shadow-orange-600 hover:transform hover:scale-105 transition-transform duration-300">
+            <h1 className="text-orange-500 text-2xl">
+              Software Engineering Student
+            </h1>
+            <p className="text-white">
+            As a diligent software engineering student, I'm honing my skills in various technologies, including the MERN stack. With a passion for learning and a drive for excellence, I'm committed to becoming a proficient developer capable of delivering innovative solutions and contributing to the field of software engineering.
+            </p>
+          </div>
+          <div className="bg-custom-4 bg-opacity-5 w-2/4 rounded-md p-2 ml-40 mt-2 z-50 shadow-md hover:shadow-orange-600 hover:transform hover:scale-105 transition-transform duration-300">
+            <h1 className="text-orange-500 text-2xl">MERN Stack Developer</h1>
+            <p className="text-white">
+            I'm a seasoned MERN stack developer specializing in React.js, Node.js, Express.js, MongoDB and PostgreSQL. With a focus on creating scalable and robust web solutions, I leverage my expertise to deliver high-quality applications that meet clients' needs and surpass expectations.
+            </p>
+          </div>
         </div>
       </div>
-
-
     </>
   );
 }
