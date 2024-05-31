@@ -29,12 +29,13 @@ import ProjectCard from "../Components/ProjectCard";
 import ContactForm from "../Components/ContactForm";
 import ContactInfo from "../Components/ContactInfo";
 import LottiePlayers2 from "../Components/LottiePlayers2";
+import { NavLink } from "react-router-dom";
 
 function Home() {
   const [textIndex, setTextIndex] = useState(0);
   const texts = [
     "MERN Stack Developer",
-    "Software Eng Student",
+    "Software Engineering Student",
     "React.js",
     "Node.js, Express.js",
     "PostgreSQL, MongoDB",
@@ -50,14 +51,14 @@ function Home() {
 
   return (
     <>
-      <div className="flex m-24">
-        <div className="w-1/2">
-          <h3 className=" text-gray-400 text-2xl font-semibold">Hello, I'm</h3>
-          <h1 className="text-4xl  mt-2 text-white font-bold">Moeez Iqbal</h1>
-          <h1 className=" mt-10 text-5xl text-orange-500 font-semibold">
+      <div className="flex flex-col lg:flex-row m-6 lg:m-24">
+        <div className="w-full lg:w-1/2">
+          <h3 className="text-gray-400 text-2xl font-semibold">Hello, I'm</h3>
+          <h1 className="text-4xl mt-2 text-white font-bold">Moeez Iqbal</h1>
+          <h1 className="mt-10 text-3xl text-orange-500 font-semibold">
             {texts[textIndex]}
           </h1>
-          <h3 className=" mt-10 text-gray-400 font-sans mr-2">
+          <h3 className="mt-10 text-gray-400 font-sans mr-2">
             As a MERN Stack Developer, I am committed to delivering high-quality
             web applications that align perfectly with my clients' needs. With
             years of practical experience in web development, I specialize in
@@ -67,18 +68,20 @@ function Home() {
             only meets but surpasses expectations, achieving outstanding results
             and driving success.
           </h3>
-          <div className="flex  mt-14">
-            <button className="bg-orange-500 p-2 w-80 text-white rounded-lg hover:bg-gray-700 transform transition-transform duration-300 hover:-translate-y-2 font-semibold flex items-center justify-center">
+          <div className="flex flex-col lg:flex-row mt-10 lg:mt-14">
+            <button className="bg-orange-500 p-2 w-full lg:w-80 text-white rounded-lg hover:bg-gray-700 transform transition-transform duration-300 hover:-translate-y-2 font-semibold flex items-center justify-center mb-4 lg:mb-0">
               <span className="mr-2">Download Resume</span>
               <FaDownload />
             </button>
-            <button className="border-2 border-orange-500 p-2 w-30 text-white rounded-lg hover:bg-orange-500 transform transition-transform duration-300 hover:-translate-y-2 font-semibold flex items-center justify-center ml-5">
-              <span className="mr-2">About</span>
-              <FcAbout />
-            </button>
+            <NavLink to="/about" className="lg:ml-5">
+              <button className="border-2 border-orange-500 p-2 w-full lg:w-30 text-white rounded-lg hover:bg-orange-500 transform transition-transform duration-300 hover:-translate-y-2 font-semibold flex items-center justify-center">
+                <span className="mr-2">About</span>
+                <FcAbout />
+              </button>
+            </NavLink>
           </div>
         </div>
-        <div className="w-1/2 ml-48">
+        <div className="w-full lg:w-1/2 mt-10 lg:mt-0 lg:ml-12 flex justify-center lg:justify-end">
           <LottiePlayers2 />
         </div>
       </div>
@@ -153,10 +156,10 @@ function Home() {
           <h1 className="text-3xl text-white font-semibold">Contact Me</h1>
           <ContactForm />
           <div className="flex gap-2">
-          <button className="bg-orange-500 p-2 w-30 text-white rounded-lg hover:bg-slate-800 transform transition-transform duration-300 hover:-translate-y-2 font-semibold flex items-center justify-center mt-4">
-            <span >Send</span>
-            <IoSend className="ml-2"/>
-          </button>
+            <button className="bg-orange-500 p-2 w-30 text-white rounded-lg hover:bg-slate-800 transform transition-transform duration-300 hover:-translate-y-2 font-semibold flex items-center justify-center mt-4">
+              <span>Send</span>
+              <IoSend className="ml-2" />
+            </button>
           </div>
         </div>
 

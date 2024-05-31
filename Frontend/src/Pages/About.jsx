@@ -57,7 +57,7 @@ function About() {
         <div className="w-1/2 ">
           <h3 className="text-gray-400 text-2xl font-semibold">Hello, I'm</h3>
           <h1 className="text-4xl mt-2 text-white font-bold">Moeez Iqbal</h1>
-          <h1 className="mt-10 text-5xl text-orange-500 font-semibold">
+          <h1 className="mt-10 text-3xl text-orange-500 font-semibold">
             {texts[textIndex]}
           </h1>
           <p className="mt-10 text-gray-400 font-sans">
@@ -107,7 +107,7 @@ function About() {
       </div>
 
       <div className="flex">
-        <div className="w=1/2 m-10 ml-60">
+        <div className="w=1/2 m-10 ml-52">
           <h1 className="text-emerald-300 text-2xl font-semibold">
             Languages:
           </h1>
@@ -144,7 +144,7 @@ function About() {
           </div>
         </div>
 
-        <div className="w-1/2 ml-44 mt-5">
+        <div className="w-1/2 ml-48 mt-5">
           <LottiePlayer />
         </div>
       </div>
