@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { FaDownload, FaBars, FaTimes } from "react-icons/fa";
+import DownloadResumeButton from "./DownloadResumeButton";
 
 function Header() {
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
@@ -50,12 +51,7 @@ function Header() {
           <NavLink to="/contact" className={({ isActive }) => isActive ? "text-orange-500 font-semibold" : "hover:text-orange-500 font-semibold"} onClick={() => setMenuOpen(false)}>
             Contact
           </NavLink>
-          <li className="block lg:inline-block mt-4 lg:mt-0">
-            <div className="bg-orange-500 rounded-md p-2 font-semibold flex items-center hover:bg-slate-700 hover:transform hover:scale-105 transition-transform duration-300">
-              <span className="mr-2">Resume</span>
-              <FaDownload />
-            </div>
-          </li>
+          <DownloadResumeButton className="w-96"/>
         </ul>
       </div>
     </header>

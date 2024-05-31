@@ -19,7 +19,7 @@ import {
 import { RiBootstrapFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiVisualstudiocode } from "react-icons/si";
 import LottiePlayer from "../Components/LottiePlayer";
-import LottiePlayer3 from "../Components/LottiePlayer3";
+import DownloadResumeButton from "../Components/DownloadResumeButton";
 
 function About() {
   const [textIndex, setTextIndex] = useState(0);
@@ -91,10 +91,7 @@ function About() {
             </p>
           </div>
           <div className="flex  mt-14">
-            <button className="bg-orange-500 p-2 w-80 text-white rounded-lg hover:bg-gray-700 transform transition-transform duration-300 hover:-translate-y-2 font-semibold flex items-center justify-center">
-              <span className="mr-2">Download Resume</span>
-              <FaDownload />
-            </button>
+          <DownloadResumeButton />
           </div>
         </div>
       </div>
@@ -145,7 +142,11 @@ function About() {
         </div>
 
         <div className="w-1/2 ml-48 mt-5">
-          <LottiePlayer />
+        <LottiePlayer 
+        src="https://lottie.host/6acb3d7f-047e-45a8-a621-7bc491c8688a/Odm0Zqw3tz.json" 
+        width="500px" 
+        height="500px" 
+      />
         </div>
       </div>
 
@@ -158,7 +159,11 @@ function About() {
 
       <div className="flex">
         <div className="w-1/2 ml-48 mt-10">
-          <LottiePlayer3 />
+        <LottiePlayer 
+        src="https://lottie.host/4fcec937-9651-4aee-9837-285ed03071bd/QuZehPzqVq.json" 
+        width="400px" 
+        height="400px" 
+      />
         </div>
 
         <div className="w-1/2 mt-16 mb-16 ">

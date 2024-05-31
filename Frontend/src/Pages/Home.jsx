@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from "react";
-import backgroundImage from "../assets/Bg1.jpg";
-import {
-  FaDownload,
-  FaReact,
-  FaNode,
-  FaLongArrowAltRight,
-  FaLocationArrow,
-} from "react-icons/fa";
+import { FaReact, FaNode, FaLongArrowAltRight } from "react-icons/fa";
 import {
   IoPersonSharp,
   IoCall,
@@ -18,7 +11,7 @@ import {
   IoLogoFacebook,
   IoLogoWhatsapp,
 } from "react-icons/io5";
-import { IoLogoTwitch, IoMdMail } from "react-icons/io";
+import { IoMdMail } from "react-icons/io";
 import { FcAbout } from "react-icons/fc";
 import { VscServerProcess } from "react-icons/vsc";
 import Travelix from "../assets/Travelix.png";
@@ -28,8 +21,9 @@ import ServiceCard from "../Components/ServiceCard";
 import ProjectCard from "../Components/ProjectCard";
 import ContactForm from "../Components/ContactForm";
 import ContactInfo from "../Components/ContactInfo";
-import LottiePlayers2 from "../Components/LottiePlayers2";
 import { NavLink } from "react-router-dom";
+import DownloadResumeButton from "../Components/DownloadResumeButton";
+import LottiePlayer from "../Components/LottiePlayer";
 
 function Home() {
   const [textIndex, setTextIndex] = useState(0);
@@ -69,10 +63,7 @@ function Home() {
             and driving success.
           </h3>
           <div className="flex flex-col lg:flex-row mt-10 lg:mt-14">
-            <button className="bg-orange-500 p-2 w-full lg:w-80 text-white rounded-lg hover:bg-gray-700 transform transition-transform duration-300 hover:-translate-y-2 font-semibold flex items-center justify-center mb-4 lg:mb-0">
-              <span className="mr-2">Download Resume</span>
-              <FaDownload />
-            </button>
+            <DownloadResumeButton />
             <NavLink to="/about" className="lg:ml-5">
               <button className="border-2 border-orange-500 p-2 w-full lg:w-30 text-white rounded-lg hover:bg-orange-500 transform transition-transform duration-300 hover:-translate-y-2 font-semibold flex items-center justify-center">
                 <span className="mr-2">About</span>
@@ -82,32 +73,40 @@ function Home() {
           </div>
         </div>
         <div className="w-full lg:w-1/2 mt-10 lg:mt-0 lg:ml-12 flex justify-center lg:justify-end">
-          <LottiePlayers2 />
+          <LottiePlayer
+            src="https://lottie.host/578bb240-7be1-4cd5-b440-2b8e3f8a16d6/x72O81a9lk.json"
+            width="500px"
+            height="500px"
+          />
         </div>
       </div>
 
-      <div className="flex flex-col items-center m-24">
-        <h1 className="text-1xl text-gray-400">What I Provide</h1>
-        <div className="flex justify-center gap-4 mt-4">
-          <h1 className="text-3xl text-white font-bold">My</h1>
-          <h1 className="text-3xl text-orange-500 font-bold">Services</h1>
+      <div className="flex flex-col items-center m-6 sm:m-12 lg:m-24">
+        <h1 className="text-lg text-gray-400 sm:text-xl">What I Provide</h1>
+        <div className="flex justify-center gap-2 mt-2 sm:gap-4 sm:mt-4">
+          <h1 className="text-2xl text-white font-bold sm:text-3xl">My</h1>
+          <h1 className="text-2xl text-orange-500 font-bold sm:text-3xl">
+            Services
+          </h1>
         </div>
 
-        <div className="flex justify-between mt-16 items-center">
+        <div className="flex flex-col items-center mt-8 space-y-8 sm:space-y-0 sm:flex-row sm:justify-between sm:mt-16 sm:items-center sm:space-x-4">
           <ServiceCard
-            icon={<FaReact className="text-4xl text-orange-500" />}
+            icon={<FaReact className="text-3xl text-orange-500 sm:text-4xl" />}
             title="Front End Development"
-            description="A front-end developer I specializes in creating the visual and interactive aspects of web applications with the use of technologies like HTML, CSS, and JavaScript, along with frameworks such as React to build responsive and user-friendly interfaces."
+            description="As a front-end developer, I specialize in creating the visual and interactive aspects of web applications using technologies like HTML, CSS, and JavaScript, along with frameworks such as React to build responsive and user-friendly interfaces."
           />
           <ServiceCard
-            icon={<FaNode className="text-4xl text-orange-500" />}
+            icon={<FaNode className="text-3xl text-orange-500 sm:text-4xl" />}
             title="Back End Development"
-            description="As a back-end developer I focuses on the server-side logic and database management of web applications by using Nodejs and Expressjs their responsibilities include building APIs, managing database interactions and security for maintaining balance."
+            description="As a back-end developer, I focus on the server-side logic and database management of web applications using Node.js and Express.js. My responsibilities include building APIs, managing database interactions, and ensuring security and performance."
           />
           <ServiceCard
-            icon={<VscServerProcess className="text-4xl text-orange-500" />}
+            icon={
+              <VscServerProcess className="text-3xl text-orange-500 sm:text-4xl" />
+            }
             title="Full Stack Development"
-            description="As a full stack developer, I embrace the challenge of building comprehensive solutions from the ground up. With expertise spanning both front-end and back-end technologies, I thrive on crafting seamless experiences interface elegance."
+            description="As a full stack developer, I embrace the challenge of building comprehensive solutions from the ground up. With expertise in both front-end and back-end technologies, I thrive on crafting seamless experiences and elegant interfaces."
           />
         </div>
       </div>
