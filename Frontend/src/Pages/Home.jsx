@@ -45,7 +45,7 @@ function Home() {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row m-6 lg:m-24">
+      <div className="flex flex-col lg:flex-row m-10 mt-20 lg:m-24">
         <div className="w-full lg:w-1/2">
           <h3 className="text-gray-400 text-2xl font-semibold">Hello, I'm</h3>
           <h1 className="text-4xl mt-2 text-white font-bold">Moeez Iqbal</h1>
@@ -94,7 +94,7 @@ function Home() {
           <ServiceCard
             icon={<FaReact className="text-3xl text-orange-500 sm:text-4xl" />}
             title="Front End Development"
-            description="As a front-end developer, I specialize in creating the visual and interactive aspects of web applications using technologies like HTML, CSS, and JavaScript, along with frameworks such as React to build responsive and user-friendly interfaces."
+            description="As a front-end developer, I specialize in creating the visual and interactive aspects of web applications using technologies like HTML, CSS, and JavaScript, along with frameworks such as React. My focus is on building responsive and user-friendly interfaces."
           />
           <ServiceCard
             icon={<FaNode className="text-3xl text-orange-500 sm:text-4xl" />}
@@ -106,7 +106,7 @@ function Home() {
               <VscServerProcess className="text-3xl text-orange-500 sm:text-4xl" />
             }
             title="Full Stack Development"
-            description="As a full stack developer, I embrace the challenge of building comprehensive solutions from the ground up. With expertise in both front-end and back-end technologies, I thrive on crafting seamless experiences and elegant interfaces."
+            description="As a full-stack developer, I embrace the challenge of building comprehensive solutions from the ground up. With expertise in both front-end and back-end technologies, I thrive on crafting seamless experiences and elegant interfaces."
           />
         </div>
       </div>
@@ -120,16 +120,19 @@ function Home() {
 
         <div className="flex justify-between  items-center mt-16">
           <ProjectCard
+            id={1}
             image={Travelix}
             alt="Travelix Project"
             title="Travel Agency Front End"
           />
           <ProjectCard
+           id={2}
             image={Netflix}
             alt="Netflix Project"
             title="Netflix UI Front End"
           />
           <ProjectCard
+          id={3}
             image={EstateExplorer}
             alt="Estate Explorer Project"
             title="Real Estate Full Stack"
@@ -137,9 +140,11 @@ function Home() {
         </div>
       </div>
       <div className="ml-24">
-        <button className="text-md flex mx-3 mt-4  items-center text-white bg-orange-500 p-2 rounded-lg font-semibold hover:bg-slate-700 transform transition-transform duration-300 hover:-translate-y-2">
-          See All <FaLongArrowAltRight className="ml-2" />
-        </button>
+        <NavLink to="/project">
+          <button className="text-md flex mx-3 mt-10  items-center text-white bg-orange-500 p-2 rounded-lg font-semibold hover:bg-slate-700 transform transition-transform duration-300 hover:-translate-y-2">
+            See All <FaLongArrowAltRight className="ml-2" />
+          </button>
+        </NavLink>
       </div>
 
       <div className="flex flex-col items-center m-6 md:m-24 mb-5">

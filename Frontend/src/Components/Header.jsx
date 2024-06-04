@@ -28,7 +28,7 @@ function Header() {
   };
 
   return (
-    <header className={`bg-custom-5 w-full z-50 shadow-xl p-4 transition-transform duration-300 transform ${visible ? "" : "-translate-y-full"}`}>
+    <header className={`bg-custom-5 w-full z-50 shadow-xl p-4 transition-transform duration-1000 transform ${visible ? "" : "-translate-y-full"}`}>
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <NavLink to="/">
           <h1 className="font-lobster text-orange-500 text-3xl">Moeez Iqbal</h1>

@@ -42,7 +42,7 @@ function Footer() {
         </div>
         <div className="flex flex-col sm:flex-row justify-center items-center mt-4 gap-4">
           <a
-            href="https://www.upwork.com/freelancers/~017d32611130515f6a"
+            href="https://www.upwork.com/freelancers/~017d32611130515f6a?viewMode=1"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -63,10 +63,6 @@ function Footer() {
         <hr className="w-11/12 border-t border-gray-500 mt-4" />
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4">
           <p className="text-white">© Copyright All Rights Reserved</p>
-          <div className="flex flex-row items-center gap-1">
-            <p className="text-white">Design Credit</p>
-            <p className="text-orange-500">Arbab Mustafa</p>
-          </div>
           <div className="flex flex-row items-center gap-1">
             <p className="text-white">Developed by</p>
             <p className="text-orange-500">Moeez Iqbal</p>

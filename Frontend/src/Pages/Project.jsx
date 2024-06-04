@@ -17,23 +17,26 @@ function Project() {
 
         <div className="flex justify-between  items-center mt-16">
           <ProjectCard
+            id={1}
             image={Travelix}
             alt="Travelix Project"
             title="Travel Agency Front End"
           />
           <ProjectCard
+            id={2}
             image={Netflix}
             alt="Netflix Project"
             title="Netflix UI Front End"
           />
           <ProjectCard
+            id={3}
             image={EstateExplorer}
             alt="Estate Explorer Project"
             title="Real Estate Full Stack"
           />
         </div>
       </div>
-      <div className="ml-24">
+      <div className="ml-24 mb-24">
         <button className="text-md flex mx-3 mt-4  items-center text-white bg-orange-500 p-2 rounded-lg font-semibold hover:bg-slate-700 transform transition-transform duration-300 hover:-translate-y-2">
           See All <FaLongArrowAltRight className="ml-2" />
         </button>
